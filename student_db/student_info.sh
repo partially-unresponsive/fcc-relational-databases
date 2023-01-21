@@ -3,7 +3,8 @@
 # Info about my computer science students from students database
 
 echo -e "\n~~ My Computer Science Students ~~\n"
-
+# The data stored in the PSQL database is also stored in students.csv
+# That data can be uploaded to a PSQL database and the username/owner can be changed so that this script may be used outside of the FCC's CodeAlly environment
 PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only -c"
 
 echo -e "\nFirst name, last name, and GPA of students with a 4.0 GPA:"
